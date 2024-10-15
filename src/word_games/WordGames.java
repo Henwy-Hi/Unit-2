@@ -1,8 +1,8 @@
 package word_games;
 
 /**
- * Name: Brandon Smith (put your name here)
- * Date: 10-10-24 (put date of last revision here)
+ * Name: Henry Felsted
+ * Date: 10-15-24
  * Description: This is a collection of methods for a word game that
  * people can play
  */
@@ -19,11 +19,13 @@ public class WordGames
      * Scrambles a word by switching the first and second half of the word.
      * @return the scrambled word
      */
-    public String scramble()
+    public String scramble(String word)
     {
         // switch first half
+        String firstHalf = (word.substring(0, (word.length()/2)));
         // and second half
-        return "";
+        String secondHalf = (word.substring((word.length()/2), word.length()));
+        return secondHalf + firstHalf;
 
     }
 
